@@ -1,0 +1,17 @@
+{
+  "name": "ps3-twitch",
+  "version": "1.0.0",
+  "description": "A bridge between Webman PS3MAPI and twitch notifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ML-Astra",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "comfy.js": "^1.1.12",
+    "dotenv": "^10.0.0",
+    "unirest": "^0.6.0"
+  }
+}
