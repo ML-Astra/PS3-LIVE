@@ -4,6 +4,7 @@ require('dotenv').config();
 
 
 function ps3Msg(msg, icon, sound){
+    // Change the IP Address to the Address of your PS3
     axios.get(`http://192.168.1.143/notify.ps3mapi?msg=${msg}&icon=${icon}&snd=${sound}`);
     console.log(`http://192.168.1.143/notify.ps3mapi?msg=${msg}&icon=${icon}&snd=${sound}`);
 }
@@ -30,6 +31,5 @@ cjs.onSub = (user, message, subTierInfo, extra)=>{
 cjs.onJoin = (user,self,extra)=>{
     ps3Msg(`${user} has joined the chat`, 12, 5);
 }
-
-
+// Specify these either in a .env file or as exports.
 cjs.Init(process.env.TWITCHUSER, process.env.OAUTH);
